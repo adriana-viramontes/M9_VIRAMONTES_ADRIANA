@@ -26,6 +26,7 @@ body {
         }
 
         nav ul {
+                list-style: none;
                 text-align: center;
                 padding-left: 0;
                 margin: 0;
@@ -102,6 +103,22 @@ body {
 /* TABLET */
 @media screen and (min-width: 526px) and (max-width: 1007px) {
         /*Header*/
+        @font-face {
+                font-family: Sacramento;
+                src: url(Sacramento-Regular.ttf);
+        }
+        h1 {
+                color: rosybrown;
+                font-family: Sacramento;
+                text-align: center;
+                font-size: 36px;
+                margin: 0;
+        }
+
+        nav {
+                background-color: rosybrown;
+        }
+
         nav ul {
                 list-style: none;
                 text-align: center;
@@ -111,9 +128,70 @@ body {
                 margin: 0;
         }
 
-        /*Footer*/
+        nav ul li {
+                display: inline;
+                margin: 5px;
+                font-size: 8px;
+                color: #fff;
+        }
+
+        /* Main */
+        figure.banner {
+                width: 100%;
+                margin: auto;
+                text-align: center;
+                float: none;
+        }
+
+        figure.banner img {
+                width: 100%;
+                padding: 0;
+        }
+
+        h2 {
+                font-family: Sacramento;
+                text-align: center;
+                color: rosybrown;
+                margin-bottom: 0;
+        }
+
+        p {
+                text-align: center;
+                font-size: 10px;
+                margin: 0;
+                padding: 10px;
+        }
+
+        div {
+                display: flex;
+                justify-content: space-around;
+        }
+
+        figure {
+                width: 30%;
+                float: left;
+                margin: auto;
+        }
+
+        figure img {
+                width: 100%;
+        }
+
+        figcaption {
+                text-align: center;
+                color: rosybrown;
+                font-family: Sacramento;
+                font-size: 12px;
+                padding: 5px;
+        }
+
+        /* Footer */
         footer {
+                clear: both;
+                background-color: rosybrown;
+                color: #fff;
                 padding: 10px 5px;
+                font-size: 8px;
         }
 }
 
